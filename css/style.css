@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/*---------------------------------------------------------------------------------------------------------main-body*/
+.main-body{
+    display: flex;
+    position: relative;
+}
+/*---------------------------------------------------------------------------------------------------------left-div*/
+.left-div{
+    background: #2d3247;
+    width: 20%;
+    height: 100.3vh;
+}
+/*----------------------------heading*/
+.heading{
+    width: 99%;
+    height: 80px;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(0deg,#000,#262626);
+    position: relative;
+    border-radius: 20px;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    background-color: #0e1538;
+    inset: 4px;
+    border-radius: 15px;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 80%;
+    background: linear-gradient(45deg, #fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    animation: animate 10s linear infinite;
+
+}
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.heading h1 a{
+    position: relative;
+    color: rgb(110, 110, 110);
+    z-index: 10;
+    text-decoration: none;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.heading h1 a:hover{
+    color:aliceblue;
+}
+
+/*----------------------------Second-left-div*/
+.second-left-div{
+    background: #0e1538;
+    width: 99%;
+    overflow: hidden;
+    height: 60vh;
+    border-radius: 1em;
+    margin-top: 10px;
+    margin-left: 3px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(1, 1, 1, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(1, 0, 0, 0.1);
+}
+/*---------pagename*/
+.pagename{
+    width: 99%;
+    height: 80px;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(0deg,#000,#262626);
+    position: relative;
+    border-radius: 20px;
+    color: #faffe9;
+}
+/*------------------------------third-left-bottom-div*/
+.third-left-bottom-div{
+    background: #0e1538;
+    width: 99%;
+    overflow: hidden;
+    height: 29vh;
+    border-radius: 1em;
+    margin-top: 5px;
+    margin-left: 3px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(1, 1, 1, 0.1),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                inset 5px 5px 5px rgba(1, 0, 0, 0.1);
+}
+
+/*---------------------------------------------------------------------------------------------------------Right-div*/
+.right-div{
+    border: 1px solid black;
+    background: #525a5d;
+    width: 80%;
+    height: 100vh;
+}
+
+/*-----------------------------first-right-div*/
+.first-right-div{
+    margin-top: 0px;
+    margin-left: 5px;
+    border: 2px solid black;
+    background: #305069;
+    width: 99%;
+    height: 99vh;
+    border-radius: 1em;
+    display: list-item;
+}
+/*---------------------------first-right-top-div*/
+.first-right-top-div{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 5px;
+    width: 78.5%;
+    background: #3F6A8A;
+    height: 7.1vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+    5px 5px 5px rgba(1, 1, 1, 0.1),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 5px rgba(1, 0, 0, 0.1);
+
+}
+
+
+/*----------------------------first-right-left-div*/
+.first-right-left-div{
+    position: absolute;
+    margin-top: 72px;
+    margin-left: 5px;
+    background: #3F6A8A;
+    width: 60%;
+    height: 70.5vh;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(1, 1, 1, 0.1),
+                inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+                inset -5px -5px 5px rgba(1, 0, 0, 0.1);
+                
+}
+/*-------------------------second-right-left-div*/
+.second-right-left-div{
+    position: absolute;
+    background-color: rgb(140, 130, 130);
+    width: 60%;
+    height: 12.3vh;
+    margin-top: 704px;
+    margin-left: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(1, 1, 1, 0.1),
+                inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+                inset -5px -5px 5px rgba(1, 0, 0, 0.1);
+}
+/*-------------------------third-right-right-div*/
+.third-right-right-div{
+    position: absolute;
+    background-color: rgb(140, 130, 130);
+    width: 17.6%;
+    height: 83.6vh;
+    margin-top: 72px;
+    overflow: hidden;
+    margin-left: 61%;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+    5px 5px 5px rgba(1, 1, 1, 0.1),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 5px rgba(1, 0, 0, 0.1);
+}
+/*-------------------------fourth-right-bottom-div*/
+.fourth-right-bottom-div{
+    position: absolute;
+    background-color: #0e1538;
+    width: 78.4%;
+    height: 6vh;
+    margin-top: 820px;
+    overflow: hidden;
+    margin-left: 5px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+    5px 5px 5px rgba(1, 1, 1, 0.1),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 5px rgba(1, 0, 0, 0.1);
+}
+  
