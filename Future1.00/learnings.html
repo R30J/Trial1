@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML portal</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/learnings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+</head>
+
+<body class="main-body">
+    <!-------------------------------------------------------------LEFT DIV-->
+    <div class="left-div">
+        <header class="heading">
+            <h1><a href="main.html">GO TO HOME</a></h1>
+        </header>
+        <div class="second-left-div">
+            <div class="pagename">
+                <h2>LEARNINGS</h2>
+            </div>
+        </div>
+        <div class="third-left-bottom-div">
+            
+        </div>
+    </div>
+
+
+    <!-------------------------------------------------------------RIGHT DIV-->
+    <div class="right-div" >
+        
+        <div class="first-right-div">
+            <div class="first-right-top-div">
+                <video src="videos.html/Pexels Videos 4147.mp4" muted loop autoplay></video>
+                <!---------------------------=--====Navigationbar-->
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="c.html">C</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">JAVA</a></li>
+                        <li><a href="#">PYTHON</a></li>
+                        <li><a href="javascript.html">JAVASCRIPT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="first-right-left-div">
+               
+            </div>
+            <div class="second-right-left-div">
+
+            </div>
+            <div class="third-right-right-div">
+
+            </div>
+            <div class="fourth-right-bottom-div">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.memories-item').click(function () {
+                $(this).next('.menu-menu').slideToggle();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

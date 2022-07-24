@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+
+/*----------------------------------Navigationbar*/
+
+.nav-bar{ 
+   z-index: 9;
+   position: relative;
+}
+.nav-bar ul{
+    
+}
+
+
+.nav-bar ul li{
+    margin-top: 5px;
+    display: inline-block;
+    height: 55px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.2),
+    5px 5px 5px rgba(1, 1, 1, 0.1),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(1, 0, 0, 0.1);
+}
+
+
+.nav-bar ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 14px;
+    font-size: 20px;
+    display: inline-block;
+    width: 170px;
+    height: fit-content;
+}
+.nav-bar ul li a:hover{
+    color: rgb(170, 170, 170);
+    transition: 0.3s ease;
+}
+
+.first-right-top-div video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}

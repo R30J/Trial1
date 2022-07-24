@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML portal</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/learnings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+</head>
+
+<body class="main-body">
+    <!-------------------------------------------------------------LEFT DIV-->
+    <div class="left-div">
+        <header class="heading">
+            <h1><a href="main.html">GO TO HOME</a></h1>
+        </header>
+        <div class="second-left-div">
+            <div class="pagename">
+                <h2>C</h2>
+            </div>
+            <div class="item"><a href="#introduction">Introduction</a></div>
+            <div class="item">
+                <a href="#datatype" class="menu-btn">Data type*</i></a>
+                <div class="menu-menu">
+                    <a href="#variable" class="datatype-item">Variable</a>
+                    <a href="#constants" class="datatype-item">Constants</a>
+                    
+                    <a href="#input" class="datatype-item">Input</a>
+                    <a href="#output" class="datatype-item">Output</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#operator" class="menu-btn">Operator*</a>
+                <div class="menu-menu">
+                    <a href="#arithmetic" class="datatype-item">Arithmetic operators</a>
+                    <a href="#relational" class="datatype-item">Relational operators</a>
+                    <a href="#logical" class="datatype-item">Logical operators</a>
+                    <a href="#bitwise" class="datatype-item">Bitwise operators</a>
+                    <a href="#assignment" class="datatype-item">Assignment operators</a>
+                    <a href="#miscellaneous" class="datatype-item">Miscellaneous operators</a>
+                    <a href="#precedence" class="datatype-item">Operator Precedence</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#conditionals" class="menu-btn">Conditionals and Loops*</a>
+                <div class="menu-menu">
+                    <a href="#ifelse" class="conditionals-item">If else statements</a>
+                    <a href="#switch" class="conditionals-item">The Switch statements</a>
+                    <a href="#loops" class="menu-btn">Loops*</a> 
+                    <div class="menu-menu">
+                        <a href="#while" class="loops-item">The while Loop</a>
+                        <a href="#dowhile" class="loops-item">The do-while Loop</a>
+                        <a href="#for" class="loops-item">The for Loop</a>
+                    </div>           
+                </div>
+            </div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+            <div class="item"><a href="#">Introduction</a></div>
+        </div>
+        <div class="third-left-bottom-div">
+            
+        </div>
+    </div>
+
+
+    <!-------------------------------------------------------------RIGHT DIV-->
+    <div class="right-div" >
+        
+        <div class="first-right-div">
+            <div class="first-right-top-div">
+                <video src="videos.html/Pexels Videos 4147.mp4" muted loop autoplay></video>
+                <!---------------------------=--====Navigationbar-->
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="learnings.html">Learnings</a></li>
+                        <li><a href="Qbank.html">Qbank</a></li>
+                        <li><a href="c.html">C</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">JAVA</a></li>
+                        <li><a href="#">PYTHON</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="first-right-left-div">
+                <h1 id="introduction" style="font-size: 3em;">What is C ?</h1></br>
+                <p id="para1">C is a Programming Language. C is one of the oldest and first
+                    programming language. C was developed by <b>Dennis Ritchie</b> at At&T's Bell labs,
+                    USA in 1972.</br></br>
+                    <b>1.</b>Major parts of <b>Windows, Linux </b>and other OS are written in C.</br>
+                    <b>2.</b>It is used to write driver programs for devices like Tab, Printers.</br>
+                    <b>3.</b>C language is used to program embedded systems where programs need to</br>
+                    run faster in limited memory<b>(Microwave, cameras)</b>.</br>
+                    <b>4.</b>C is used to develop <b>Games</b> an area where latency is very important. </br>
+                    Computer has to react quickly on user input.</br>
+                </p></br></br>
+                <h1>Hello World!</h1></br></br>
+                <p style="font-size: 2em;">"Hello World!" program:</p>
+                </br></br>
+                <pre class="code" style="font-size: 15px;"><code>
+                #include <stdio.h>
+                    int main(){
+                        printf("Hello, World!\n");
+                        return 0;
+                    }
+                </code></pre>
+                <br>
+                <p style="font-size: 25px;"><b>#include></b>
+                    <stdio.h> The function used for generating output is defined in stdio.h. In order to use the
+                        printf function, we need to first include the required file, also called a <b>header
+                            file.</b><br>
+
+                        <b>int main() </b>The main() function is the entry point to a program. Curly brackets { }
+                        indicate the
+                        beginning and end of a function (also called a code block). The statements inside the brackets
+                        determine what the function does when executed.
+                </p></br></br>
+                <!-----------------------------------------22222222222222222222222222222222222222-DATATYPE-->
+                <h1 id="datatype" style="font-size: 3em;">Data Type</h1></br>
+                <p style="font-size: 25px;"><b>-Basic data type:</b></br>
+                    <b>int:</b>integer, a whole number.</br>
+                    <b>float:</b>floating point, a number with a fractional point.</br>
+                    <b>double:</b>double-precision floating point value.</br>
+                    <b>char:</b>single character.</br>
+                    </br>
+                    <b>Derived data type:</b>array, pointr, structure, union.</br>
+                    <b>Enumeration data type:</b>emum.</br>
+                    <b>Void data type:</b>Void.</br></br>
+                </p>
+                <pre class="code" style="font-size: 15px;"><code>
+                        #include <stdio.h>
+
+                            int main() {
+                                printf("int: %ld \n", sizeof(int));
+                                printf("float: %ld \n", sizeof(float));
+                                printf("double: %ld \n", sizeof(double));
+                                printf("char: %ld \n", sizeof(char));
+                            
+                                return 0;
+                            }
+                        </code>
+                    </pre></br>
+                <!-------------------------------------------variable-->
+                <h1 id="variable" style="font-size: 3em;">Variable</h1></br>
+                <p style="font-size: 25px;">
+                    A name given to a memory location. Declared by writing <b>type variable_name;</b>
+                    initialized and declared by <b>type variable_name = value;</b></br></br>
+                    <b>RULES:</b></br>
+                    <li>can contain alphabets, digits, underscore_</li>
+                    <li>A variable can start with an alphabet and underscore only.ex:-<b>int_raj;</b></li>
+                    <li>can't start with a digit.ex:-<b>int 9raj; *nhi krr sakte.</b></li>
+                    <li>no whitespace, reserved keywords is allowed.ex:-<b>int long; *nhi likh skte.</b></li>
+                    <li style="color: red;">kisi insaan ka name chair ya table nhi rakh skte usi tarah. int raj
+                        yogesh(no space)nahi likh sakte.</li>
+                    </br>
+                <pre class="code"><code>
+                        int my_var;
+                        my_var = 42;
+                        int my_var=42;
+                    </code></pre>
+                </p></br></br>
+                <!-------------------------------------------Constants-->
+                <h1 id="constants" style="font-size: 3em;">Contants</h1>
+                </br>
+                <p style="font-size: 25px;">
+                    A constant stores a value that cannot be changed from its initial assignment. By using constants
+                    with meaningful
+                    names, code is easier to read and understand.
+                    <b>example:-</b>
+                <pre class="code"><code>
+                            int main(){
+                                const double PI = 3.14;
+                                printf("%f", PI);
+                                return 0;
+                            }
+
+                            Another way            cannot be changed
+                            #define PI 3.14
+                            int main(){
+                                printf("%f", PI);
+                                return 0;
+                            }
+                        </code></pre>
+                </p>
+                </br>
+                </br>
+                <!----------------------------------------------------------------Input-->
+                <h1 id="input" style="font-size: 3em;">Input</h1></br>
+                <p style="font-size: 25px;">
+                    C supports a number of ways for taking user input.
+                    <b>getchar()</b> Returns the value of the next single character input.<br>
+                    <b>example:</b><br>
+                <pre class="code"><code>
+            char a = getchar()
+            printf("You entered: %c", a);
+        </code></pre><br>
+                <b>gets()</b><br>
+                it is used to read input as an ordered sequence of characters, also called a string.<br>
+                <b>example:</b>
+                <br>
+                <pre class="code"><code>
+            char a[100];
+            gets(a);
+            printf("You entered: %s", a);
+        </code></pre><br>
+                Here, we stored the input in an array of 100 characters..<br>
+                <b>scanf()</b><br>
+                scans input that matches format specifiers.<br>
+                <pre class="code"><code>
+            int a;
+            scanf("%d", &a);
+            printf("You entered: %d", a);
+        </code></pre><br>
+
+                <b>&</b> sign before the variable name is the <b>address operator.</b>it gives the address or location
+                in memory.
+                of a variable. This is needed because <b>scanf</b>
+                places an input value at a variable address.
+                </p><br>
+                <h2>*Formatted input</h2>
+                <br>
+                <p><b>scanf</b> function is used to assign input to variables.<br>
+                <pre class="code"><code>
+                int x;
+                float num;
+                char text[20];
+                scanf("%d %f %s", &x, &num, text);
+            </pre><br>
+                <li><b>&</b> must be used to access the variable adress isn't needed for a string because a string name
+                    acts as a pointer.</li>
+                <li><b>%</b> used to assign values to corresponding arguments after the control string.<b>Blanks, tabs,
+                        nuwlines are ignored.</b></li>
+                <li><b>%[*][max_field] conversion character</b>
+                    <b>*</b> will skip the input field.<br>
+                    max_width gives the max num of character to assign to an input field.
+                </li>
+                <b>d</b>
+                decimal<br>
+                <b>c</b>
+                character<br>
+                <b>s</b>
+                string<br>
+                <b>f</b>
+                float<br>
+                <b>X</b>
+                hexadecimal<br>
+                </p>
+                <b>example:</b>
+                <br>
+                <pre class="code"><code>
+            int x,y;
+            char text[20];
+            scanf("%2d %d %*f %55", &x, &y, text);
+            /* input: 1234  5.7  elephant  */
+            printf("%d %d %s", x, y, text);
+            /* output: 12 34 eleph */
+        </code></pre><br>
+        <br>
+        <!------------------------------------------------------output-->
+        <h1 id="output" style="font-size: 3em;">Output</h1><br>
+        <p style="font-size: 25px;">
+        <b>putchar()</b>
+        outputs a single character.<br>
+        <pre class="code"><code>
+            char a = getchar();
+            printf("You entered:");
+            putchar(a);
+        </code></pre><br>
+        <b>puts()</b>
+        display output as a string.<br>
+        <pre class="code"><code>
+            char a[100];
+            gets(a);
+            printf("You entered:");
+            puts(a);
+        </code></pre><br>
+        <b>scanf()</b>
+        <br>
+        <pre class="code"><code>
+            int a;
+            scanf("%d", &a);
+            printf("You entered: %d", a);
+        </code></pre><br>
+        <br>
+        <h2>*Formatting output</h2>
+        <br>
+        <b>Escape sequences begin with a backslash \ :</b>
+        <b>\n</b>
+        new line<br>
+        <b>\t</b>
+        horizontal tab<br>
+        <b>\\</b>
+        backslash<br>
+        <b>\b</b>
+        backspace<br>
+        <b>\'</b>
+        single quote<br>
+        <b>\"</b>
+        double quote<br>
+        <b>%[-][width].[precision] conversion character</b><br>
+        <li><b>optional-</b>specifies left alignment of data in string.</li>
+        <li><b>width-</b>given the minimum number of char in data.</li>
+        <li><b>period-</b>seprates the width fromthe precision.</li>
+        <li><b>precision-</b>gives he number of decimal places for numeric data.</li>
+        <br>
+        <b>If s is used as the conversion char,</b> then precision determines the number of characters to print.
+        <b>d</b>
+        decimal<br>
+        <b>c</b>
+        character<br>
+        <b>s</b>
+        string<br>
+        <b>f</b>
+        float<br>
+        <b>X</b>
+        hexadecimal<br>
+        <b>e</b>
+        scientific notation<br> 
+        </p>
+        <b>example:</b>
+        <br>
+        <pre class="code"><code>
+            printf("color: %s, Num: %d, Float: %5.2f\n", "red", 42, 3.12149);
+            /*color: red, Num:42, Float:3.14*/
+        </code></pre><br>
+
+        <!----------------------------------------------------------------Operator-->
+        <h1 id="operator">Operator*</h1><br>
+        <p style="font-size: 25px;">An operator is a symbol used to perform operation in given programming language.<br>
+        </p>
+        <h1 id="arithmetic"><b>Arithmetic operator</b></h1><br>
+        <p style="font-size: 25px;">
+        <b>+</b>
+        Addition<br>
+        <b>-</b>
+        Subtraction<br>
+        <b>*</b>
+        Multiplication<br>
+        <b>/</b>
+        Devision<br>
+        <b>%</b>
+        Modulus<br>
+        </p>
+        <h1 id="relational"><b>Relational operator</b></h1>
+        <br>
+        <b>==</b>
+        is equal to<br>
+        <b>!=</b>
+        is not equal to<br>
+        <b>></b>
+        greator than<br>
+        <b><</b>
+        less than<br>
+        <b>>=</b>
+        greater than equal to<br>
+        <b><=</b>
+        less than equal to<br>
+        <h1 id="logical"><b>Logical operator</b></h1>
+        <br>
+        <b>&&</b> Logical AND operator, if both the operands are non-zero then the condition is true.<br>
+        <b>ex:</b> (A&&B) is true.<br>
+        <b>||</b> Logical OR operator, if any of these two operands is non-zero, then condition becomes true.<br>
+        <b>ex:</b> (A||B) is true.<br>
+        <b>!</b> Logical NOT operator, it is used to reverse the logical state of its operand. if condition is true, the logical NOT operator will make it false.<br>
+        <b>!(A&&B) is ture.</b>
+        <br>
+
+        <h1 id="bitwise"><b>Bitwise operators</b></h1>
+        <br>
+        <table border="1px">
+            <tr>
+                <th></th>
+                <th></th>
+                <th>(AND)</th>
+                <th>(OR)</th>
+                <th>(XOR)</th>
+            </tr>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>a&b</th>
+                <th>a|b</th>
+                <th>a^b</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h1 id="assignment"><b>Assignment operator</b></h1><br>
+        <b>=</b> Assign values from right side to left side opearnd.<br>
+        <b>+=</b> it adds the right to the left operand and assign the result to the left operand.<br>
+        <b>-+   *=   /= </b> works as Same..<br>
+        <h1 id="miscellaneous"><b>Miscellaneous operator</b></h1><br>
+        <b>sizeof()</b> Returns the size of a varible. <b>sizeof(a)</b> where a is integer, will return int's size on that architecture.<br>
+        <b>&</b> Returns the address of a variable. <b>&a:</b> returns the actual address of the variable.<br>
+        <b>*</b> pointer to a variable. <b>*a</b><br>
+        <b>?:</b> conditional expression. if condition is true ? then value <b>X:</b> otherwise value Y.<br>
+        <h1 id="precedence"><b>Operator Precedence in c</b></h1><br>
+        In programming languages, the associativity of an operator is a property that determines how operators of the same precendence are grouped in the absence of <b>parentheses</b><br>
+        <table border="2px">
+            <tr>
+                <th>Category</th>
+                <th>Operator</th>
+                <th>Associativity</th>
+            </tr>
+            <tr>
+                <td>Postfix</td>
+                <td>() [] - > . + + - -</td>
+                <td>Left to Right</td></tr>
+                <tr><td>Unary</td>
+                <td>+ - ! ~ + + - - (type * & sizeof)</td>
+                <td>Right to Left</td></tr>
+                <tr>
+                <td>Multiplication</td>
+                <td>* / %</td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>Additive</td>
+                <td> + -</td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>shift</td>
+                <td>< < > ></td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>Relational</td>
+                <td> < <= > >=</td>
+                <td>Left fo Right</td>
+            </tr>
+            <tr>
+                <td>Equality</td>
+                <td>== !=</td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>Bitwise AND</td>
+                <td>&</td>
+                <td>Left to RIght</td>
+            </tr>
+            <tr>
+                <td>Bitwise XOR</td>
+                <td> ^</td>
+                <td> Left to Right</td>
+            </tr>
+            <tr>
+                <td>Bitwise OR</td>
+                <td>|</td>
+                <td>Left or Right</td>
+            </tr>
+            <tr>
+                <td>Logical AND</td>
+                <td>&&</td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>Logical OR</td>
+                <td>||</td>
+                <td>Left to Right</td>
+            </tr>
+            <tr>
+                <td>Conditional</td>
+                <td>?:</td>
+                <td>Right to Left</td>
+            </tr>
+            <tr>
+                <td>Assignment</td>
+                <td>= += -= *= /= %=<br>
+                =>>= <<= &= ^= |=</td>
+                <td>Right to Left</td>
+            </tr>
+            <tr>
+                <td>Comma</td>
+                <td>,</td>
+                <td>Left to RIght</td>
+            </tr>
+        </tr>
+
+        </table>
+        <br>
+        <br>
+        <b>*KEY POINTS</b><br>
+        <pre class="code"><code>
+            ++m prefix- FIRST INCREMENT THEN USE IT.
+            M++ postfix- FIRST USE IT THEN INCREMENT
+            n-=n1 means= n=n-n1
+        </code></pre><br>
+        <b>Ternary operator</b>
+        <br>
+        <pre class="code"><code>
+            _______?________:_______
+            x>y ? x:y;
+            if x>y true ---> x else y
+        </code></pre><br>
+        <!---------------------------------------------------------------------------Conditionals and Loops-->
+        <h1 id="conditionals" style="font-size: 3em;"><b>Conditionals and Loops</b></h1>
+        <br>
+        <h2 id="ifelse">If ELSE Statement</h2>
+        It is used to perform operation based on some conditionals.<br>
+        <li><b>if</b></li><br>
+        <pre class="code"><code>
+            if(condition){
+                code;
+            }
+        </code></pre><br>
+        <li><b>if else</b></li><br>
+        <pre class="code"><code>
+            if(condition){
+                if true
+            }
+            else{
+                if false
+            }
+        </code></pre><br>
+        <li><b>if else if</b></li><br>
+        <pre class="code"><code>
+            if(condition){
+                code
+            }
+            else if(condition2){
+                code
+            }
+            else{
+                code
+            }
+        </code></pre><br>
+        <li><b>nested if</b></li><br>
+        An if statement can include another if statement to form a nested statement.<br>
+        <pre class="code"><code>
+            if(profit>1000)
+                if(clients>15)
+                    bonus = 100;
+                else
+                    bonus = 25;
+        </code></pre><br>
+        <br>
+
+
+
+            </div>
+            <div class="second-right-left-div">
+
+            </div>
+            <div class="third-right-right-div">
+
+            </div>
+            <div class="fourth-right-bottom-div">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                $(this).next('.menu-menu').slideToggle();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
